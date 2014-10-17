@@ -19,8 +19,11 @@ class RouteServiceProvider extends ServiceProvider {
 	 */
 	protected $scan = [
 		'App\Http\Controllers\HomeController',
+		'App\Http\Controllers\DogsController',
 		'App\Http\Controllers\Auth\AuthController',
 		'App\Http\Controllers\Auth\PasswordController',
+		'App\Http\Controllers\PagesController',
+
 	];
 
 	/**
@@ -43,7 +46,7 @@ class RouteServiceProvider extends ServiceProvider {
 	 */
 	public function map(Router $router)
 	{
-		// require app_path('Http/routes.php');
+		 require app_path('Http/routes.php');
 	}
 
 }

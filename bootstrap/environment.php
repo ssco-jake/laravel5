@@ -32,5 +32,7 @@ if (file_exists(__DIR__.'/../.env'))
 
 $env = $app->detectEnvironment(function()
 {
+	//dd(getenv('APP_ENV') ?: 'production');
+
 	return getenv('APP_ENV') ?: 'production';
 });

@@ -2,6 +2,10 @@
 
 use Illuminate\Routing\Controller;
 
+/**
+*@Resource("/")
+*/
+
 class HomeController extends Controller {
 
 	/*
@@ -15,11 +19,10 @@ class HomeController extends Controller {
 	|
 	*/
 
-	/**
-	 * @Get("/")
-	 */
+	
 	public function index()
 	{
+		dd('Home Controller');
 		return view('hello');
 	}
 
